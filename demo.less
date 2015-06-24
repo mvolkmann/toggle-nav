@@ -1,0 +1,39 @@
+body {
+  box-sizing: border-box;
+  margin: 0 0 10px 0;
+}
+
+.common {
+  bottom: 0;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  transition-duration: 0.5s;
+  transition-property: left;
+}
+
+#my-nav {
+  .common; // mixin
+
+  background-color: LightBlue;
+  left: 0;
+  width: 300px;
+
+  // & here represents the parent #my-nav.
+  &.hidden {
+    left: -300px;
+
+    // & here represents the parent #my-nav.hidden.
+    & + #my-content {
+      left: 0;
+    }
+  }
+}
+
+#my-content {
+  .common; // mixin
+
+  background-color: LightGreen;
+  left: 300px;
+  right: 0;
+}
