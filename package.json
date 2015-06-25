@@ -1,0 +1,29 @@
+{
+  "name": "toggle-nav",
+  "version": "1.0.0",
+  "description": "demonstrates use of CSS ancestor sibiling selector (also LESS and AngularJS)",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mvolkmann/toggle-nav.git"
+  },
+  "keywords": [
+    "CSS",
+    "LESS",
+    "AngularJS"
+  ],
+  "author": "R. Mark Volkmann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mvolkmann/toggle-nav/issues"
+  },
+  "homepage": "https://github.com/mvolkmann/toggle-nav"
+}
