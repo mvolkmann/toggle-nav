@@ -19,5 +19,5 @@ To run these,
 
 1. install Node.js
 1. enter "npm install"
-1. enter "node server.js"
+1. enter "npm start"
 1. browse localhost:3000/index-{version}.html.
