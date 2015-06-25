@@ -19,10 +19,10 @@ nav + .content {
   right: 0;
 }
 
-nav.hidden + .content {
-  left: 0;
-}
-
 nav.hidden {
   left: -300px;
+}
+
+nav.hidden + .content {
+  left: 0;
 }

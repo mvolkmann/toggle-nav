@@ -1,6 +1,5 @@
-// Provide some global variables for nav.
-// This is only needed to make it easier to consume without IDs.
-// AngularJS removes this need.
+// Create one global container for app data
+// rather than multiple global variables.
 var appData = {
   navHidden: false
 };
@@ -11,9 +10,8 @@ window.onload = function () {
   appData.nav = document.querySelector('nav');
 };
 
-// NOTE: All of these functions are globally available in the app.
-// The next two functions are not needed
-// if AngularJS ng-class is used.
+// The following functions are globally available in the app,
+// and are not needed if AngularJS ng-class and ng-click are used.
 // See index-ng.html.
 function addClass(element, className) {
   var classes = element.className.split(' ');
@@ -27,7 +25,7 @@ function removeClass(element, className) {
   element.className = classes.join(' ');
 }
 
-// This allows for ng-click-esq usage without AngularJS
+// This allows for ng-click-like usage without AngularJS.
 function toggleNav () {
   appData.navHidden = !appData.navHidden;
   if (appData.navHidden) {
