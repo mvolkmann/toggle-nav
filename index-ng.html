@@ -8,12 +8,11 @@
     <script src="angular.min.js"></script>
   </head>
   <body>
-    <div id="my-nav" ng-class="{'hidden': navHidden}">
+    <nav ng-class="{'hidden': navHidden}">
       nav goes here
-    </div>
-    <div id="my-content">
-      <button id="toggle-btn"
-        ng-click="navHidden = !navHidden">
+    </nav>
+    <div class="content">
+      <button ng-click="navHidden = !navHidden">
         Toggle Nav
       </button>
       <div>content goes here</div>
