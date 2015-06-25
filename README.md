@@ -1,4 +1,4 @@
-Toggle Nav Demo
+# Toggle Nav Demo
 
 This demonstrates using the CSS ancestor sibling selector
 to implement a hideable left nav area.
