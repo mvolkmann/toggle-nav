@@ -16,6 +16,7 @@ There are three versions.
 * index-ng.html - uses LESS and AngularJS, with no custom JavaScript
 
 To run these,
+
 1. install Node.js
 1. enter "npm install"
 1. enter "node server.js"
