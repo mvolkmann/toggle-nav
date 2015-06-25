@@ -1,7 +1,4 @@
-body {
-  box-sizing: border-box;
-  margin: 0 0 10px 0;
-}
+@nav-width: 300px;
 
 .common {
   bottom: 0;
@@ -17,11 +14,11 @@ body {
 
   background-color: LightBlue;
   left: 0;
-  width: 300px;
+  width: @nav-width;
 
   // & here represents the parent #my-nav.
   &.hidden {
-    left: -300px;
+    left: -@nav-width;
 
     // & here represents the parent #my-nav.hidden.
     & + #my-content {
