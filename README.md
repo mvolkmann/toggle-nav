@@ -15,5 +15,8 @@ There are three versions.
 * index-less.html - uses LESS and JavaScript
 * index-ng.html - uses LESS and AngularJS, with no custom JavaScript
 
-To run these, enter "node server.js" and
-browse localhost:3000/index-{version}.html.
+To run these,
+1. install Node.js
+1. enter "npm install"
+1. enter "node server.js"
+1. browse localhost:3000/index-{version}.html.
