@@ -9,7 +9,7 @@
   transition-property: left;
 }
 
-#my-nav {
+nav {
   .common; // mixin
 
   background-color: LightBlue;
@@ -21,13 +21,13 @@
     left: -@nav-width;
 
     // & here represents the parent #my-nav.hidden.
-    & + #my-content {
+    & + .content {
       left: 0;
     }
   }
 }
 
-#my-content {
+.content {
   .common; // mixin
 
   background-color: LightGreen;
